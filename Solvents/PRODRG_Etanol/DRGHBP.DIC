@@ -1,0 +1,12 @@
+# PRODRG output for HBPLUS input
+-u DRG
+# ATOM NAMES
+-M DRG " CAA"
+-M DRG " CAC"
+-M DRG " OAB"
+# BONDS
+-T DRG " CAA CAC:"
+-T DRG " CAC OAB:"
+# ACCEPTOR (-e) or DONOR (-E) types and number of H-bonds
+-E DRG " OAB" 1
+-e DRG " OAB" 2

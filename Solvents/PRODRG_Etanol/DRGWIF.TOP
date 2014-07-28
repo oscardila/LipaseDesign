@@ -1,0 +1,32 @@
+*
+DRG 1
+# AT  BND CHI TRS CRD #BL HGR HAT ANG 1-3 PAR PC HANG TYP
+   4   3   1   1   1   3   0   3   2   1   1   1   1   6
+#===== Atom names
+ CAA  CAC  OAB  HAF 
+#===== Bonds
+   2   1   2   3   3   4
+#===== Rotatable bonds
+   2   3   4
+#===== Torsion angles
+   1   2   3   4
+#===== Coordinates, hydrogen bonding and planarity
+ 44.87452 46.02959 44.88775  F     
+ 45.33452 44.58960 45.06775  F     
+ 44.19452 43.71959 45.07775  T  4  
+ 44.48452 42.77959 45.19775  F     
+#===== Standard bond lengths
+1.530 0.020
+1.430 0.020
+1.000 0.020
+#===== Standard bond angles
+  1   2   3  109.5  2.0
+  2   3   4  109.5  2.0
+#===== 1--3 connections
+   2   3
+   2   4
+   2   1
+   2   2
+#===== Charges
+ 0.045  0.054 -0.121  0.022
+*END

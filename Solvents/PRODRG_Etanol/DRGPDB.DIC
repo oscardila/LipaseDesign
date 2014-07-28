@@ -1,0 +1,7 @@
+RESIDUE   DRG      4
+CONECT      CAA    1 CAC 
+CONECT      CAC    2 CAA  OAB 
+CONECT      OAB    2 CAC  HAF 
+CONECT      HAF    1 OAB 
+END
+HET    DRG              4

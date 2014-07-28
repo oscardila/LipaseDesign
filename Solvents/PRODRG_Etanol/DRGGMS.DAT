@@ -1,0 +1,19 @@
+ $CONTRL
+   COORD=CART UNITS=ANGS
+   ICHARG=  0
+   SCFTYP=RHF RUNTYP=ENERGY
+ $END
+ $BASIS GBASIS=STO NGAUSS=3 NDFUNC=0 NPFUNC=0 $END
+ $DATA
+PRODRG output for DRG  
+C1
+CAA          6.0    -2.830    -1.070     0.050
+HAA          1.0    -3.367    -0.976    -0.894
+HAB          1.0    -1.963    -0.409     0.042
+HAC          1.0    -3.480    -0.868     0.902
+CAC          6.0    -2.370    -2.510     0.230
+HAD          1.0    -1.833    -2.604     1.174
+HAE          1.0    -1.768    -2.759    -0.644
+OAB          8.0    -3.510    -3.380     0.240
+HAF          1.0    -3.220    -4.320     0.360
+ $END
