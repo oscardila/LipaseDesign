@@ -1,0 +1,60 @@
+RESIDUE   DRG     57
+CONECT      CAA    1 CAG 
+CONECT      CAG    2 CAA  CAJ 
+CONECT      CAJ    2 CAG  CAM 
+CONECT      CAM    2 CAJ  CAP 
+CONECT      CAP    2 CAM  CAS 
+CONECT      CAS    2 CAP  CAV 
+CONECT      CAV    2 CAS  CAY 
+CONECT      CAY    2 CAV  CBB 
+CONECT      CBB    2 CAY  CBE 
+CONECT      CBE    2 CBB  CBH 
+CONECT      CBH    2 CBE  CBK 
+CONECT      CBK    2 CBH  CBN 
+CONECT      CBN    2 CBK  CBQ 
+CONECT      CBQ    2 CBN  CBT 
+CONECT      CBT    2 CBQ  CCB 
+CONECT      CCB    3 CBT  OAD  OBY 
+CONECT      OAD    1 CCB 
+CONECT      OBY    2 CCB  CBW 
+CONECT      CBW    2 OBY  CCE 
+CONECT      CCE    3 CBW  OCA  CBX 
+CONECT      OCA    2 CCE  CCD 
+CONECT      CCD    3 OCA  OAF  CBV 
+CONECT      OAF    1 CCD 
+CONECT      CBV    2 CCD  CBS 
+CONECT      CBS    2 CBV  CBP 
+CONECT      CBP    2 CBS  CBM 
+CONECT      CBM    2 CBP  CBJ 
+CONECT      CBJ    2 CBM  CBG 
+CONECT      CBG    2 CBJ  CBD 
+CONECT      CBD    2 CBG  CBA 
+CONECT      CBA    2 CBD  CAX 
+CONECT      CAX    2 CBA  CAU 
+CONECT      CAU    2 CAX  CAR 
+CONECT      CAR    2 CAU  CAO 
+CONECT      CAO    2 CAR  CAL 
+CONECT      CAL    2 CAO  CAI 
+CONECT      CAI    2 CAL  CAC 
+CONECT      CAC    1 CAI 
+CONECT      CBX    2 CCE  OBZ 
+CONECT      OBZ    2 CBX  CCC 
+CONECT      CCC    3 OBZ  OAE  CBU 
+CONECT      OAE    1 CCC 
+CONECT      CBU    2 CCC  CBR 
+CONECT      CBR    2 CBU  CBO 
+CONECT      CBO    2 CBR  CBL 
+CONECT      CBL    2 CBO  CBI 
+CONECT      CBI    2 CBL  CBF 
+CONECT      CBF    2 CBI  CBC 
+CONECT      CBC    2 CBF  CAZ 
+CONECT      CAZ    2 CBC  CAW 
+CONECT      CAW    2 CAZ  CAT 
+CONECT      CAT    2 CAW  CAQ 
+CONECT      CAQ    2 CAT  CAN 
+CONECT      CAN    2 CAQ  CAK 
+CONECT      CAK    2 CAN  CAH 
+CONECT      CAH    2 CAK  CAB 
+CONECT      CAB    1 CAH 
+END
+HET    DRG             57

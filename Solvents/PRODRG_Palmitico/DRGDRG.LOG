@@ -1,0 +1,1126 @@
+ PROGRAM : PRODRG
+ CONVERTS PDB TO TOPOLOGY BUILDING BLOCK!!!!
+  
+ WRITTEN BY D.M.F. VAN AALTEN AND A. SCHUETTELKOPF 1993-2008
+ 
+ CALLED WITH THE FOLLOWING ARGUMENTS
+
+  1: /local/webservices/www-prodg/v4data/53D66D9735EF000020E2/inputfile              
+  2: /var/www/html/www-prodg/w/data/prodrg.param                                     
+  3: EM CGRP
+
+
+ CONNECTION TABLE
+
+         155  ATOMS
+    1  CAA  +        3    4   16    2    3    4
+    2  HAA  ,        0    1    1
+    3  HAB  ,        0    1    1
+    4  HAC  ,        0    1    1
+    5  CAB  +        3    4   19    6    7    8
+    6  HAD  ,        0    1    5
+    7  HAE  ,        0    1    5
+    8  HAF  ,        0    1    5
+    9  CAC  +        3    4   22   10   11   12
+   10  HAG  ,        0    1    9
+   11  HAH  ,        0    1    9
+   12  HAI  ,        0    1    9
+   13  OAD  +        2    1  151
+   14  OAE  +        2    1  152
+   15  OAF  +        2    1  153
+   16  CAG  +        3    4    1   25   17   18
+   17  HAJ  ,        0    1   16
+   18  HAK  ,        0    1   16
+   19  CAH  +        3    4    5   28   20   21
+   20  HAL  ,        0    1   19
+   21  HAM  ,        0    1   19
+   22  CAI  +        3    4    9   31   23   24
+   23  HAN  ,        0    1   22
+   24  HAO  ,        0    1   22
+   25  CAJ  +        3    4   16   34   26   27
+   26  HAP  ,        0    1   25
+   27  HAQ  ,        0    1   25
+   28  CAK  +        3    4   19   37   29   30
+   29  HAR  ,        0    1   28
+   30  HAS  ,        0    1   28
+   31  CAL  +        3    4   22   40   32   33
+   32  HAT  ,        0    1   31
+   33  HAU  ,        0    1   31
+   34  CAM  +        3    4   25   43   35   36
+   35  HAV  ,        0    1   34
+   36  HAW  ,        0    1   34
+   37  CAN  +        3    4   28   46   38   39
+   38  HAX  ,        0    1   37
+   39  HAY  ,        0    1   37
+   40  CAO  +        3    4   31   49   41   42
+   41  HAZ  ,        0    1   40
+   42  HA0  ,        0    1   40
+   43  CAP  +        3    4   34   52   44   45
+   44  HA1  ,        0    1   43
+   45  HA2  ,        0    1   43
+   46  CAQ  +        3    4   37   55   47   48
+   47  HA3  ,        0    1   46
+   48  HA4  ,        0    1   46
+   49  CAR  +        3    4   40   58   50   51
+   50  HA5  ,        0    1   49
+   51  HA6  ,        0    1   49
+   52  CAS  +        3    4   43   61   53   54
+   53  HA7  ,        0    1   52
+   54  HA8  ,        0    1   52
+   55  CAT  +        3    4   46   64   56   57
+   56  HA9  ,        0    1   55
+   57  HBA  ,        0    1   55
+   58  CAU  +        3    4   49   67   59   60
+   59  HBB  ,        0    1   58
+   60  HBC  ,        0    1   58
+   61  CAV  +        3    4   52   70   62   63
+   62  HBD  ,        0    1   61
+   63  HBE  ,        0    1   61
+   64  CAW  +        3    4   55   73   65   66
+   65  HBF  ,        0    1   64
+   66  HBG  ,        0    1   64
+   67  CAX  +        3    4   58   76   68   69
+   68  HBH  ,        0    1   67
+   69  HBI  ,        0    1   67
+   70  CAY  +        3    4   61   79   71   72
+   71  HBJ  ,        0    1   70
+   72  HBK  ,        0    1   70
+   73  CAZ  +        3    4   64   82   74   75
+   74  HBL  ,        0    1   73
+   75  HBM  ,        0    1   73
+   76  CBA  +        3    4   67   85   77   78
+   77  HBN  ,        0    1   76
+   78  HBO  ,        0    1   76
+   79  CBB  +        3    4   70   88   80   81
+   80  HBP  ,        0    1   79
+   81  HBQ  ,        0    1   79
+   82  CBC  +        3    4   73   91   83   84
+   83  HBR  ,        0    1   82
+   84  HBS  ,        0    1   82
+   85  CBD  +        3    4   76   94   86   87
+   86  HBT  ,        0    1   85
+   87  HBU  ,        0    1   85
+   88  CBE  +        3    4   79   97   89   90
+   89  HBV  ,        0    1   88
+   90  HBW  ,        0    1   88
+   91  CBF  +        3    4   82  100   92   93
+   92  HBX  ,        0    1   91
+   93  HBY  ,        0    1   91
+   94  CBG  +        3    4   85  103   95   96
+   95  HBZ  ,        0    1   94
+   96  HB0  ,        0    1   94
+   97  CBH  +        3    4   88  106   98   99
+   98  HB1  ,        0    1   97
+   99  HB2  ,        0    1   97
+  100  CBI  +        3    4   91  109  101  102
+  101  HB3  ,        0    1  100
+  102  HB4  ,        0    1  100
+  103  CBJ  +        3    4   94  112  104  105
+  104  HB5  ,        0    1  103
+  105  HB6  ,        0    1  103
+  106  CBK  +        3    4   97  115  107  108
+  107  HB7  ,        0    1  106
+  108  HB8  ,        0    1  106
+  109  CBL  +        3    4  100  118  110  111
+  110  HB9  ,        0    1  109
+  111  HCA  ,        0    1  109
+  112  CBM  +        3    4  103  121  113  114
+  113  HCB  ,        0    1  112
+  114  HCC  ,        0    1  112
+  115  CBN  +        3    4  106  124  116  117
+  116  HCD  ,        0    1  115
+  117  HCE  ,        0    1  115
+  118  CBO  +        3    4  109  127  119  120
+  119  HCF  ,        0    1  118
+  120  HCG  ,        0    1  118
+  121  CBP  +        3    4  112  130  122  123
+  122  HCH  ,        0    1  121
+  123  HCI  ,        0    1  121
+  124  CBQ  +        3    4  115  133  125  126
+  125  HCJ  ,        0    1  124
+  126  HCK  ,        0    1  124
+  127  CBR  +        3    4  118  136  128  129
+  128  HCL  ,        0    1  127
+  129  HCM  ,        0    1  127
+  130  CBS  +        3    4  121  139  131  132
+  131  HCN  ,        0    1  130
+  132  HCO  ,        0    1  130
+  133  CBT  +        3    4  124  151  134  135
+  134  HCP  ,        0    1  133
+  135  HCQ  ,        0    1  133
+  136  CBU  +        3    4  127  152  137  138
+  137  HCR  ,        0    1  136
+  138  HCS  ,        0    1  136
+  139  CBV  +        3    4  130  153  140  141
+  140  HCT  ,        0    1  139
+  141  HCU  ,        0    1  139
+  142  CBW  +        3    4  148  154  143  144
+  143  HCV  ,        0    1  142
+  144  HCW  ,        0    1  142
+  145  CBX  +        3    4  149  154  146  147
+  146  HCX  ,        0    1  145
+  147  HCY  ,        0    1  145
+  148  OBY  +        3    2  142  151
+  149  OBZ  +        3    2  145  152
+  150  OCA  +        3    2  153  154
+  151  CCB  +        2    3   13  133  148
+  152  CCC  +        2    3   14  136  149
+  153  CCD  +        2    3   15  139  150
+  154  CCE  +        3    4  142  145  150  155
+  155  HCZ  ,        0    1  154
+
+    1  HAA  ,        0    1    2
+    2  CAA  -        3    4    1    3    4    5
+    3  HAB  ,        0    1    2
+    4  HAC  ,        0    1    2
+    5  CAG  +        3    4    2    6    7    8
+    6  HAJ  ,        0    1    5
+    7  HAK  ,        0    1    5
+    8  CAJ  +        3    4    5    9   10   11
+    9  HAP  ,        0    1    8
+   10  HAQ  ,        0    1    8
+   11  CAM  +        3    4    8   12   13   14
+   12  HAV  ,        0    1   11
+   13  HAW  ,        0    1   11
+   14  CAP  +        3    4   11   15   16   17
+   15  HA1  ,        0    1   14
+   16  HA2  ,        0    1   14
+   17  CAS  +        3    4   14   18   19   20
+   18  HA7  ,        0    1   17
+   19  HA8  ,        0    1   17
+   20  CAV  +        3    4   17   21   22   23
+   21  HBD  ,        0    1   20
+   22  HBE  ,        0    1   20
+   23  CAY  +        3    4   20   24   25   26
+   24  HBJ  ,        0    1   23
+   25  HBK  ,        0    1   23
+   26  CBB  +        3    4   23   27   28   29
+   27  HBP  ,        0    1   26
+   28  HBQ  ,        0    1   26
+   29  CBE  +        3    4   26   30   31   32
+   30  HBV  ,        0    1   29
+   31  HBW  ,        0    1   29
+   32  CBH  +        3    4   29   33   34   35
+   33  HB1  ,        0    1   32
+   34  HB2  ,        0    1   32
+   35  CBK  +        3    4   32   36   37   38
+   36  HB7  ,        0    1   35
+   37  HB8  ,        0    1   35
+   38  CBN  +        3    4   35   39   40   41
+   39  HCD  ,        0    1   38
+   40  HCE  ,        0    1   38
+   41  CBQ  +        3    4   38   42   43   44
+   42  HCJ  ,        0    1   41
+   43  HCK  ,        0    1   41
+   44  CBT  +        3    4   41   45   46   47
+   45  HCP  ,        0    1   44
+   46  HCQ  ,        0    1   44
+   47  CCB  +        2    3   44   48   49
+   48  OAD  +        2    1   47
+   49  OBY  +        3    2   47   50
+   50  CBW  +        3    4   49   51   52   53
+   51  HCV  ,        0    1   50
+   52  HCW  ,        0    1   50
+   53  CCE  -        3    4   50   54   55  104
+   54  HCZ  ,        0    1   53
+   55  OCA  +        3    2   53   56
+   56  CCD  +        2    3   55   57   58
+   57  OAF  +        2    1   56
+   58  CBV  -        3    4   56   59   60   61
+   59  HCT  ,        0    1   58
+   60  HCU  ,        0    1   58
+   61  CBS  -        3    4   58   62   63   64
+   62  HCN  ,        0    1   61
+   63  HCO  ,        0    1   61
+   64  CBP  -        3    4   61   65   66   67
+   65  HCH  ,        0    1   64
+   66  HCI  ,        0    1   64
+   67  CBM  -        3    4   64   68   69   70
+   68  HCB  ,        0    1   67
+   69  HCC  ,        0    1   67
+   70  CBJ  -        3    4   67   71   72   73
+   71  HB5  ,        0    1   70
+   72  HB6  ,        0    1   70
+   73  CBG  -        3    4   70   74   75   76
+   74  HBZ  ,        0    1   73
+   75  HB0  ,        0    1   73
+   76  CBD  -        3    4   73   77   78   79
+   77  HBT  ,        0    1   76
+   78  HBU  ,        0    1   76
+   79  CBA  -        3    4   76   80   81   82
+   80  HBN  ,        0    1   79
+   81  HBO  ,        0    1   79
+   82  CAX  -        3    4   79   83   84   85
+   83  HBH  ,        0    1   82
+   84  HBI  ,        0    1   82
+   85  CAU  -        3    4   82   86   87   88
+   86  HBB  ,        0    1   85
+   87  HBC  ,        0    1   85
+   88  CAR  -        3    4   85   89   90   91
+   89  HA5  ,        0    1   88
+   90  HA6  ,        0    1   88
+   91  CAO  -        3    4   88   92   93   94
+   92  HAZ  ,        0    1   91
+   93  HA0  ,        0    1   91
+   94  CAL  -        3    4   91   95   96   97
+   95  HAT  ,        0    1   94
+   96  HAU  ,        0    1   94
+   97  CAI  -        3    4   94   98   99  100
+   98  HAN  ,        0    1   97
+   99  HAO  ,        0    1   97
+  100  CAC  +        3    4   97  101  102  103
+  101  HAH  ,        0    1  100
+  102  HAI  ,        0    1  100
+  103  HAG  ,        0    1  100
+  104  CBX  -        3    4   53  105  106  107
+  105  HCX  ,        0    1  104
+  106  HCY  ,        0    1  104
+  107  OBZ  +        3    2  104  108
+  108  CCC  +        2    3  107  109  110
+  109  OAE  +        2    1  108
+  110  CBU  -        3    4  108  111  112  113
+  111  HCR  ,        0    1  110
+  112  HCS  ,        0    1  110
+  113  CBR  -        3    4  110  114  115  116
+  114  HCL  ,        0    1  113
+  115  HCM  ,        0    1  113
+  116  CBO  -        3    4  113  117  118  119
+  117  HCF  ,        0    1  116
+  118  HCG  ,        0    1  116
+  119  CBL  -        3    4  116  120  121  122
+  120  HB9  ,        0    1  119
+  121  HCA  ,        0    1  119
+  122  CBI  -        3    4  119  123  124  125
+  123  HB3  ,        0    1  122
+  124  HB4  ,        0    1  122
+  125  CBF  -        3    4  122  126  127  128
+  126  HBX  ,        0    1  125
+  127  HBY  ,        0    1  125
+  128  CBC  -        3    4  125  129  130  131
+  129  HBR  ,        0    1  128
+  130  HBS  ,        0    1  128
+  131  CAZ  -        3    4  128  132  133  134
+  132  HBL  ,        0    1  131
+  133  HBM  ,        0    1  131
+  134  CAW  -        3    4  131  135  136  137
+  135  HBF  ,        0    1  134
+  136  HBG  ,        0    1  134
+  137  CAT  -        3    4  134  138  139  140
+  138  HA9  ,        0    1  137
+  139  HBA  ,        0    1  137
+  140  CAQ  -        3    4  137  141  142  143
+  141  HA3  ,        0    1  140
+  142  HA4  ,        0    1  140
+  143  CAN  -        3    4  140  144  145  146
+  144  HAX  ,        0    1  143
+  145  HAY  ,        0    1  143
+  146  CAK  -        3    4  143  147  148  149
+  147  HAR  ,        0    1  146
+  148  HAS  ,        0    1  146
+  149  CAH  -        3    4  146  150  151  152
+  150  HAL  ,        0    1  149
+  151  HAM  ,        0    1  149
+  152  CAB  +        3    4  149  153  154  155
+  153  HAE  ,        0    1  152
+  154  HAF  ,        0    1  152
+  155  HAD  ,        0    1  152
+
+
+ THE FINAL DRUG DESCRIPTOR
+
+9313 2-9322 1+9322 4+9322 5+9322 6+9322 7+9322 8+9322 9+932210+932211+932212+932213+932214+932215+932216+923017+7210 0+7320 0+932220+933119-7320 0+9230 0+7210 0+932223-932222-932224-932225-932226-932227-932228-932229-932230-932231-932232-932233-932234-932235-931336+932241-732040+9230 0+7210 0+932244-932243-932245-932246-932247-932248-932249-932250-932251-932252-932253-932254-932255-932256-931357+
+
+
+ CHARGER TYPES
+
+HAA    1 HC3       0.0200 con=  6
+HAB    1 HC3       0.0200 con=  6
+HAC    1 HC3       0.0200 con=  6
+HAJ    1 HC3       0.0200 con=  6
+HAK    1 HC3       0.0200 con=  6
+HAP    1 HC3       0.0200 con=  6
+HAQ    1 HC3       0.0200 con=  6
+HAV    1 HC3       0.0200 con=  6
+HAW    1 HC3       0.0200 con=  6
+HA1    1 HC3       0.0200 con=  6
+HA2    1 HC3       0.0200 con=  6
+HA7    1 HC3       0.0200 con=  6
+HA8    1 HC3       0.0200 con=  6
+HBD    1 HC3       0.0200 con=  6
+HBE    1 HC3       0.0200 con=  6
+HBJ    1 HC3       0.0200 con=  6
+HBK    1 HC3       0.0200 con=  6
+HBP    1 HC3       0.0200 con=  6
+HBQ    1 HC3       0.0200 con=  6
+HBV    1 HC3       0.0200 con=  6
+HBW    1 HC3       0.0200 con=  6
+HB1    1 HC3       0.0200 con=  6
+HB2    1 HC3       0.0200 con=  6
+HB7    1 HC3       0.0200 con=  6
+HB8    1 HC3       0.0200 con=  6
+HCD    1 HC3       0.0200 con=  6
+HCE    1 HC3       0.0200 con=  6
+HCJ    1 HC3       0.0200 con=  6
+HCK    1 HC3       0.0200 con=  6
+HCP    1 HC3       0.0200 con=  6
+HCQ    1 HC3       0.0200 con=  6
+HCV    1 HC3       0.0200 con=  6
+HCW    1 HC3       0.0200 con=  6
+HCZ    1 HC3       0.0200 con=  6
+HCT    1 HC3       0.0200 con=  6
+HCU    1 HC3       0.0200 con=  6
+HCN    1 HC3       0.0200 con=  6
+HCO    1 HC3       0.0200 con=  6
+HCH    1 HC3       0.0200 con=  6
+HCI    1 HC3       0.0200 con=  6
+HCB    1 HC3       0.0200 con=  6
+HCC    1 HC3       0.0200 con=  6
+HB5    1 HC3       0.0200 con=  6
+HB6    1 HC3       0.0200 con=  6
+HBZ    1 HC3       0.0200 con=  6
+HB0    1 HC3       0.0200 con=  6
+HBT    1 HC3       0.0200 con=  6
+HBU    1 HC3       0.0200 con=  6
+HBN    1 HC3       0.0200 con=  6
+HBO    1 HC3       0.0200 con=  6
+HBH    1 HC3       0.0200 con=  6
+HBI    1 HC3       0.0200 con=  6
+HBB    1 HC3       0.0200 con=  6
+HBC    1 HC3       0.0200 con=  6
+HA5    1 HC3       0.0200 con=  6
+HA6    1 HC3       0.0200 con=  6
+HAZ    1 HC3       0.0200 con=  6
+HA0    1 HC3       0.0200 con=  6
+HAT    1 HC3       0.0200 con=  6
+HAU    1 HC3       0.0200 con=  6
+HAN    1 HC3       0.0200 con=  6
+HAO    1 HC3       0.0200 con=  6
+HAH    1 HC3       0.0200 con=  6
+HAI    1 HC3       0.0200 con=  6
+HAG    1 HC3       0.0200 con=  6
+HCX    1 HC3       0.0200 con=  6
+HCY    1 HC3       0.0200 con=  6
+HCR    1 HC3       0.0200 con=  6
+HCS    1 HC3       0.0200 con=  6
+HCL    1 HC3       0.0200 con=  6
+HCM    1 HC3       0.0200 con=  6
+HCF    1 HC3       0.0200 con=  6
+HCG    1 HC3       0.0200 con=  6
+HB9    1 HC3       0.0200 con=  6
+HCA    1 HC3       0.0200 con=  6
+HB3    1 HC3       0.0200 con=  6
+HB4    1 HC3       0.0200 con=  6
+HBX    1 HC3       0.0200 con=  6
+HBY    1 HC3       0.0200 con=  6
+HBR    1 HC3       0.0200 con=  6
+HBS    1 HC3       0.0200 con=  6
+HBL    1 HC3       0.0200 con=  6
+HBM    1 HC3       0.0200 con=  6
+HBF    1 HC3       0.0200 con=  6
+HBG    1 HC3       0.0200 con=  6
+HA9    1 HC3       0.0200 con=  6
+HBA    1 HC3       0.0200 con=  6
+HA3    1 HC3       0.0200 con=  6
+HA4    1 HC3       0.0200 con=  6
+HAX    1 HC3       0.0200 con=  6
+HAY    1 HC3       0.0200 con=  6
+HAR    1 HC3       0.0200 con=  6
+HAS    1 HC3       0.0200 con=  6
+HAL    1 HC3       0.0200 con=  6
+HAM    1 HC3       0.0200 con=  6
+HAE    1 HC3       0.0200 con=  6
+HAF    1 HC3       0.0200 con=  6
+HAD    1 HC3       0.0200 con=  6
+CCB    6 C         0.3874 con=  6  8  8
+CCD    6 C         0.3874 con=  8  8  6
+CCC    6 C         0.3874 con=  8  8  6
+CCE    6 CS1       0.2720 con=  6  1  8  6
+CBW    6 CS2       0.3110 con=  8  1  1  6
+CBX    6 CS2       0.3110 con=  6  1  1  8
+CAG    6 CH2       0.1572 con=  6  1  1  6
+CAJ    6 CH2       0.1572 con=  6  1  1  6
+CAM    6 CH2       0.1572 con=  6  1  1  6
+CAP    6 CH2       0.1572 con=  6  1  1  6
+CAS    6 CH2       0.1572 con=  6  1  1  6
+CAV    6 CH2       0.1572 con=  6  1  1  6
+CAY    6 CH2       0.1572 con=  6  1  1  6
+CBB    6 CH2       0.1572 con=  6  1  1  6
+CBE    6 CH2       0.1572 con=  6  1  1  6
+CBH    6 CH2       0.1572 con=  6  1  1  6
+CBK    6 CH2       0.1572 con=  6  1  1  6
+CBN    6 CH2       0.1572 con=  6  1  1  6
+CBQ    6 CH2       0.1572 con=  6  1  1  6
+CBT    6 CH2       0.1572 con=  6  1  1  6
+CBV    6 CH2       0.1572 con=  6  1  1  6
+CBS    6 CH2       0.1572 con=  6  1  1  6
+CBP    6 CH2       0.1572 con=  6  1  1  6
+CBM    6 CH2       0.1572 con=  6  1  1  6
+CBJ    6 CH2       0.1572 con=  6  1  1  6
+CBG    6 CH2       0.1572 con=  6  1  1  6
+CBD    6 CH2       0.1572 con=  6  1  1  6
+CBA    6 CH2       0.1572 con=  6  1  1  6
+CAX    6 CH2       0.1572 con=  6  1  1  6
+CAU    6 CH2       0.1572 con=  6  1  1  6
+CAR    6 CH2       0.1572 con=  6  1  1  6
+CAO    6 CH2       0.1572 con=  6  1  1  6
+CAL    6 CH2       0.1572 con=  6  1  1  6
+CAI    6 CH2       0.1572 con=  6  1  1  6
+CBU    6 CH2       0.1572 con=  6  1  1  6
+CBR    6 CH2       0.1572 con=  6  1  1  6
+CBO    6 CH2       0.1572 con=  6  1  1  6
+CBL    6 CH2       0.1572 con=  6  1  1  6
+CBI    6 CH2       0.1572 con=  6  1  1  6
+CBF    6 CH2       0.1572 con=  6  1  1  6
+CBC    6 CH2       0.1572 con=  6  1  1  6
+CAZ    6 CH2       0.1572 con=  6  1  1  6
+CAW    6 CH2       0.1572 con=  6  1  1  6
+CAT    6 CH2       0.1572 con=  6  1  1  6
+CAQ    6 CH2       0.1572 con=  6  1  1  6
+CAN    6 CH2       0.1572 con=  6  1  1  6
+CAK    6 CH2       0.1572 con=  6  1  1  6
+CAH    6 CH2       0.1572 con=  6  1  1  6
+CAA    6 CH3       0.1552 con=  1  1  1  6
+CAC    6 CH3       0.1552 con=  6  1  1  1
+CAB    6 CH3       0.1552 con=  6  1  1  1
+OAD    8 O1       -0.6781 con=  6
+OAF    8 O1       -0.6781 con=  6
+OAE    8 O1       -0.6781 con=  6
+OBY    8 OS       -0.1563 con=  6  6
+OCA    8 OS       -0.1563 con=  6  6
+OBZ    8 OS       -0.1563 con=  6  6
+
+
+ CHARGE GROUP-INDUCED ERRORS
+
+   SQ0   =   2.644
+   SQf   =   2.038 ( 77.1%)
+   Qtotr =   0.044
+   Qtotg =   0.000
+
+
+ ASSIGNED ATOM TYPES / CONNECTIVITY
+
+ N  NAME     FFTYPE GC    PDTYPE PC DESCRIPTION                    SP 5 6 NCON  CONNECTIONS
+  1 CAA         CH3 14       CH3 14 ALIPHATIC CH3-GROUP             3 F F  4    2   3   4   5
+  2 HAA          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1    1
+  3 HAB          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1    1
+  4 HAC          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1    1
+  5 CAG         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4    1   6   7   8
+  6 HAJ          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1    5
+  7 HAK          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1    5
+  8 CAJ         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4    5   9  10  11
+  9 HAP          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1    8
+ 10 HAQ          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1    8
+ 11 CAM         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4    8  12  13  14
+ 12 HAV          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   11
+ 13 HAW          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   11
+ 14 CAP         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   11  15  16  17
+ 15 HA1          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   14
+ 16 HA2          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   14
+ 17 CAS         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   14  18  19  20
+ 18 HA7          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   17
+ 19 HA8          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   17
+ 20 CAV         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   17  21  22  23
+ 21 HBD          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   20
+ 22 HBE          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   20
+ 23 CAY         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   20  24  25  26
+ 24 HBJ          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   23
+ 25 HBK          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   23
+ 26 CBB         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   23  27  28  29
+ 27 HBP          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   26
+ 28 HBQ          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   26
+ 29 CBE         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   26  30  31  32
+ 30 HBV          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   29
+ 31 HBW          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   29
+ 32 CBH         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   29  33  34  35
+ 33 HB1          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   32
+ 34 HB2          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   32
+ 35 CBK         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   32  36  37  38
+ 36 HB7          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   35
+ 37 HB8          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   35
+ 38 CBN         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   35  39  40  41
+ 39 HCD          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   38
+ 40 HCE          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   38
+ 41 CBQ         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   38  42  43  44
+ 42 HCJ          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   41
+ 43 HCK          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   41
+ 44 CBT         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   41  45  46  47
+ 45 HCP          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   44
+ 46 HCQ          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   44
+ 47 CCB           C 11         C 11 BARE CARBON                     2 F F  3   44  48  49
+ 48 OAD           O  1         O  1 CARBONYL OXYGEN (C=O)           2 F F  1   47
+ 49 OBY          OA  3        OS 53 SUGAR/ESTER OXYGEN              3 F F  2   47  50
+ 50 CBW         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   49  51  52  53
+ 51 HCV          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   50
+ 52 HCW          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   50
+ 53 CCE         CH1 12       CH1 12 ALIPHATIC CH-GROUP              3 F F  4   50  54  55 104
+ 54 HCZ          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   53
+ 55 OCA          OA  3        OS 53 SUGAR/ESTER OXYGEN              3 F F  2   53  56
+ 56 CCD           C 11         C 11 BARE CARBON                     2 F F  3   55  57  58
+ 57 OAF           O  1         O  1 CARBONYL OXYGEN (C=O)           2 F F  1   56
+ 58 CBV         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   56  59  60  61
+ 59 HCT          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   58
+ 60 HCU          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   58
+ 61 CBS         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   58  62  63  64
+ 62 HCN          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   61
+ 63 HCO          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   61
+ 64 CBP         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   61  65  66  67
+ 65 HCH          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   64
+ 66 HCI          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   64
+ 67 CBM         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   64  68  69  70
+ 68 HCB          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   67
+ 69 HCC          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   67
+ 70 CBJ         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   67  71  72  73
+ 71 HB5          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   70
+ 72 HB6          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   70
+ 73 CBG         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   70  74  75  76
+ 74 HBZ          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   73
+ 75 HB0          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   73
+ 76 CBD         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   73  77  78  79
+ 77 HBT          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   76
+ 78 HBU          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   76
+ 79 CBA         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   76  80  81  82
+ 80 HBN          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   79
+ 81 HBO          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   79
+ 82 CAX         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   79  83  84  85
+ 83 HBH          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   82
+ 84 HBI          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   82
+ 85 CAU         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   82  86  87  88
+ 86 HBB          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   85
+ 87 HBC          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   85
+ 88 CAR         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   85  89  90  91
+ 89 HA5          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   88
+ 90 HA6          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   88
+ 91 CAO         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   88  92  93  94
+ 92 HAZ          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   91
+ 93 HA0          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   91
+ 94 CAL         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   91  95  96  97
+ 95 HAT          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   94
+ 96 HAU          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   94
+ 97 CAI         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   94  98  99 100
+ 98 HAN          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   97
+ 99 HAO          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1   97
+100 CAC         CH3 14       CH3 14 ALIPHATIC CH3-GROUP             3 F F  4   97 101 102 103
+101 HAH          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  100
+102 HAI          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  100
+103 HAG          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  100
+104 CBX         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4   53 105 106 107
+105 HCX          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  104
+106 HCY          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  104
+107 OBZ          OA  3        OS 53 SUGAR/ESTER OXYGEN              3 F F  2  104 108
+108 CCC           C 11         C 11 BARE CARBON                     2 F F  3  107 109 110
+109 OAE           O  1         O  1 CARBONYL OXYGEN (C=O)           2 F F  1  108
+110 CBU         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  108 111 112 113
+111 HCR          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  110
+112 HCS          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  110
+113 CBR         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  110 114 115 116
+114 HCL          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  113
+115 HCM          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  113
+116 CBO         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  113 117 118 119
+117 HCF          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  116
+118 HCG          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  116
+119 CBL         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  116 120 121 122
+120 HB9          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  119
+121 HCA          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  119
+122 CBI         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  119 123 124 125
+123 HB3          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  122
+124 HB4          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  122
+125 CBF         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  122 126 127 128
+126 HBX          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  125
+127 HBY          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  125
+128 CBC         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  125 129 130 131
+129 HBR          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  128
+130 HBS          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  128
+131 CAZ         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  128 132 133 134
+132 HBL          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  131
+133 HBM          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  131
+134 CAW         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  131 135 136 137
+135 HBF          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  134
+136 HBG          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  134
+137 CAT         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  134 138 139 140
+138 HA9          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  137
+139 HBA          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  137
+140 CAQ         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  137 141 142 143
+141 HA3          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  140
+142 HA4          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  140
+143 CAN         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  140 144 145 146
+144 HAX          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  143
+145 HAY          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  143
+146 CAK         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  143 147 148 149
+147 HAR          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  146
+148 HAS          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  146
+149 CAH         CH2 13       CH2 13 ALIPHATIC CH2-GROUP             3 F F  4  146 150 151 152
+150 HAL          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  149
+151 HAM          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  149
+152 CAB         CH3 14       CH3 14 ALIPHATIC CH3-GROUP             3 F F  4  149 153 154 155
+153 HAE          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  152
+154 HAF          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  152
+155 HAD          HC 16        HC 16 HYDROGEN BOUND TO CARBON        0 F F  1  152
+
+
+ MOLECULE INFO
+
+  MOL. FORMULA:  C51 H98 O6
+  MOL. MASS   :  807.34 U
+
+
+ TOPOLOGY WOES
+
+  - Undetermined bond  OBY  CBW [       OS-      CH2],
+    finding best match:
+         7         C-        O     1
+         9         C-      OAS     3
+        12       CHx-       OA     6
+    Picked type  12 ( 1.43 A) with score  6.
+
+  - Undetermined bond  CCE  OCA [      CH1-       OS],
+    finding best match:
+         7         C-        O     1
+         9         C-      OAS     3
+        12       CHx-       OA     6
+    Picked type  12 ( 1.43 A) with score  6.
+
+  - Undetermined bond  CBX  OBZ [      CH2-       OS],
+    finding best match:
+         7         C-        O     1
+         9         C-      OAS     3
+        12       CHx-       OA     6
+    Picked type  12 ( 1.43 A) with score  6.
+
+  - Undetermined angle  HAA  CAA  HAB [       HC-      CH3-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAA  CAA  HAC [       HC-      CH3-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAB  CAA  HAC [       HC-      CH3-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAJ  CAG  HAK [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAP  CAJ  HAQ [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAV  CAM  HAW [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HA1  CAP  HA2 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HA7  CAS  HA8 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBD  CAV  HBE [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBJ  CAY  HBK [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBP  CBB  HBQ [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBV  CBE  HBW [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HB1  CBH  HB2 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HB7  CBK  HB8 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HCD  CBN  HCE [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HCJ  CBQ  HCK [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HCP  CBT  HCQ [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Angle type fallback for CBT  CCB  OBY  .
+
+  - Angle type fallback for OAD  CCB  OBY  .
+
+  - Undetermined angle  CCB  OBY  CBW [        C-       OS-      CH2],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        59        CS-       OS-       CS     4
+    Picked type  59 with score  4.
+
+  - Undetermined angle  OBY  CBW  HCV [       OS-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        15        Cx-      CHx-       OA     3
+        85        HC-      CHx-       Cx     6
+    Picked type  85 with score  6.
+
+  - Undetermined angle  OBY  CBW  HCW [       OS-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        15        Cx-      CHx-       OA     3
+        85        HC-      CHx-       Cx     6
+    Picked type  85 with score  6.
+
+  - Angle type fallback for OBY  CBW  CCE  .
+
+  - Undetermined angle  HCV  CBW  HCW [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Angle type fallback for CBW  CCE  OCA  .
+
+  - Undetermined angle  HCZ  CCE  OCA [       HC-      CH1-       OS],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        15        Cx-      CHx-       OA     3
+        85        HC-      CHx-       Cx     6
+    Picked type  85 with score  6.
+
+  - Angle type fallback for OCA  CCE  CBX  .
+
+  - Undetermined angle  CCE  OCA  CCD [      CH1-       OS-        C],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        59        CS-       OS-       CS     4
+    Picked type  59 with score  4.
+
+  - Angle type fallback for OCA  CCD  OAF  .
+
+  - Angle type fallback for OCA  CCD  CBV  .
+
+  - Undetermined angle  HCT  CBV  HCU [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HCN  CBS  HCO [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HCH  CBP  HCI [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HCB  CBM  HCC [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HB5  CBJ  HB6 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBZ  CBG  HB0 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBT  CBD  HBU [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBN  CBA  HBO [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBH  CAX  HBI [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBB  CAU  HBC [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HA5  CAR  HA6 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAZ  CAO  HA0 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAT  CAL  HAU [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAN  CAI  HAO [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAH  CAC  HAI [       HC-      CH3-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAH  CAC  HAG [       HC-      CH3-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAI  CAC  HAG [       HC-      CH3-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Angle type fallback for CCE  CBX  OBZ  .
+
+  - Undetermined angle  HCX  CBX  HCY [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HCX  CBX  OBZ [       HC-      CH2-       OS],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        15        Cx-      CHx-       OA     3
+        85        HC-      CHx-       Cx     6
+    Picked type  85 with score  6.
+
+  - Undetermined angle  HCY  CBX  OBZ [       HC-      CH2-       OS],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        15        Cx-      CHx-       OA     3
+        85        HC-      CHx-       Cx     6
+    Picked type  85 with score  6.
+
+  - Undetermined angle  CBX  OBZ  CCC [      CH2-       OS-        C],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        59        CS-       OS-       CS     4
+    Picked type  59 with score  4.
+
+  - Angle type fallback for OBZ  CCC  OAE  .
+
+  - Angle type fallback for OBZ  CCC  CBU  .
+
+  - Undetermined angle  HCR  CBU  HCS [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HCL  CBR  HCM [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HCF  CBO  HCG [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HB9  CBL  HCA [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HB3  CBI  HB4 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBX  CBF  HBY [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBR  CBC  HBS [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBL  CAZ  HBM [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HBF  CAW  HBG [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HA9  CAT  HBA [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HA3  CAQ  HA4 [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAX  CAN  HAY [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAR  CAK  HAS [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAL  CAH  HAM [       HC-      CH2-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAE  CAB  HAF [       HC-      CH3-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAE  CAB  HAD [       HC-      CH3-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined angle  HAF  CAB  HAD [       HC-      CH3-       HC],
+    finding best match:
+         1       CH2-       CS-      CH2     0
+        85        HC-      CHx-       Cx     4
+    Picked type  85 with score  4.
+
+  - Undetermined flat improper at HA2 , picked default type.
+
+  - Undetermined flat improper at HA8 , picked default type.
+
+  - Undetermined flat improper at HB7 , picked default type.
+
+  - Undetermined dihedral  CBW  CCE  OCA  CCD [      CH2-      CH1-       OS-        C],
+    finding best match:
+         1     X-        C-        C-    Y     2
+         2     X-      CR0-       OA-    Y     6
+        16     X-      CH2-       OA-    Y     7
+        23     X-       CS-       OS-    Y     8
+    Picked type  23 with score  8.
+
+
+ FEATURE/AFLAG LIST
+
+   256  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F T T F F F F F F F T T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F T T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F  (           0          -1          -1  )
+    10  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F T F F T T T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F  (           4          -1          -1  )
+   512  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F T T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F  (           4          -1          -1  )
+    10  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F T T T T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F  (           4          -1          -1  )
+   512  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F T T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F  (           4          -1          -1  )
+    10  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F T T T T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F  (           4          -1          -1  )
+   512  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F T T F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F  (           4          -1          -1  )
+    1f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+    2f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+    3f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+    4f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+    5f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+    6f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+    7f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+    8f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+    9f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+   10f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+   11f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+   12f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+   13f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+   14f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+   15f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+   16f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+   17f  F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F F
+   18f  T F F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T T T T F F T F T T T T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F F T F F T T T T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F T F F F
+
+
+ THANK YOU FOR USING PRODRG.....
+
